@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* 引入字体文件 */
+@font-face {
+font-family: "CustomFont";
+/* woff2压缩率高，性能好 */
+src: url('@/assets/QingNiaoHuaGuangKaiTi2-2.ttf'); 
+font-style: normal;
+font-weight: normal;
+}
