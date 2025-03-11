@@ -29,5 +29,4 @@
 
 **移动端封装**
 
-- Android WebView增强容器：
-  - 混合导航控制
+- Android WebView封装的APP
