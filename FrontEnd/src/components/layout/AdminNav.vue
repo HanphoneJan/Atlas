@@ -298,7 +298,7 @@ const notSearching = () => {
   background-color: #0F3057;
 } 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .nav-container {
      padding:0 10px;
   }

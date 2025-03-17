@@ -28,7 +28,7 @@ if ($conn === false) {
 }
 
 // 使用预处理语句避免SQL注入
-$stmt = $conn->prepare("SELECT * FROM files WHERE title LIKE ? OR author LIKE ?");
+$stmt = $conn->prepare("SELECT * FROM files WHERE title LIKE ? OR author LIKE ? AND type != 0");
 if ($stmt === false) {
     echo json_encode(array("message" => "数据库查询准备失败", "status" => 0));
     exit;

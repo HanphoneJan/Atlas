@@ -315,7 +315,7 @@ const notSearching = () => {
 } 
 
 /* 移动端隐藏搜索框 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .nav-container {
      padding:0 10px;
   }
