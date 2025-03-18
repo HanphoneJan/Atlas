@@ -3,7 +3,8 @@
 @font-face {
 font-family: "CustomFont";
 /* woff2压缩率高，性能好 */
-src: url('@/assets/QingNiaoHuaGuangKaiTi2-2.ttf'); 
+/* ttf全面 */
+src: url('@/assets/PLKaiTi.ttf'); 
 font-style: normal;
 font-weight: normal;
 }

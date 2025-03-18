@@ -383,6 +383,7 @@ const wechatRegister = () => {
   box-sizing: border-box;
   left: 0%;
   transform: translateX(0);
+  font-family: Courier,Kaiti, monospace,CustomFont;
   /* 添加过渡效果 */
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -404,6 +405,7 @@ const wechatRegister = () => {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  font-family: Courier,Kaiti, monospace,CustomFont;
 }
 
 /* 注册表单 */
@@ -418,6 +420,7 @@ const wechatRegister = () => {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  font-family: Courier,Kaiti, monospace,CustomFont;
 }
 
 /* 动画效果 */
@@ -448,10 +451,11 @@ const wechatRegister = () => {
   /* 使用样式深度选择器覆盖默认字体颜色 */
   color:black ;
   font-size: medium;
+  font-family: Courier,Kaiti, monospace,CustomFont;
 }
 .el-button{
   color:#fff;
-  font-family: KaiTi,sans-serif;
+  font-family: Courier,Kaiti, monospace,CustomFont;
   font-weight: 600;
 }
 }
@@ -556,7 +560,7 @@ const wechatRegister = () => {
 }
 .el-button{
   color:#fff;
-  font-family: KaiTi,sans-serif;
+  font-family: Courier,Kaiti, monospace,CustomFont;
   font-weight: 600;
 }
 

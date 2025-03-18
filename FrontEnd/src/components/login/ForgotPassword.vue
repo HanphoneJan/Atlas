@@ -284,10 +284,11 @@ const handleRegister = () => {
   /* 使用样式深度选择器覆盖默认字体颜色 */
   color:black ;
   font-size: medium;
+  font-family: Courier,Kaiti, monospace,CustomFont;
 }
 .el-button{
   color:#fff;
-  font-family: KaiTi,sans-serif;
+  font-family: Courier,Kaiti, monospace,CustomFont;
   font-weight: 600;
 }
 }
@@ -372,7 +373,7 @@ const handleRegister = () => {
 }
 .el-button{
   color:#fff;
-  font-family: KaiTi,sans-serif;
+  font-family: Courier,Kaiti, monospace,CustomFont;
   font-weight: 600;
 }
 }
