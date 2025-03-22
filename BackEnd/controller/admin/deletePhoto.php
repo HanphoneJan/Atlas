@@ -6,10 +6,10 @@ require_once '/www/server_atlas/config/config.php';
 header('Content-Type: application/json');
 // 获取请求中的数据
 $data = json_decode(file_get_contents('php://input'), true);
-$filepath = INTERNAL_PATH;
+$filePath = INTERNAL_PATH;
 // 检查id是否存在
-if (isset($data['id'])) {
-    $id = $data['id'];
+if (isset($data['fileId'])) {
+    $id = $data['fileId'];
 
     // 连接数据库
     $conn = getDbConnection();
@@ -27,6 +27,7 @@ if (isset($data['id'])) {
         if ($conn->query($sql) === TRUE) {
             // 删除本地文件
             if (unlink($filePath . $file_name)) {
+
                 echo json_encode(array("message" => "文件删除成功", "status" => 830));
             } else {
                 echo json_encode(array("message" => "文件删除失败", "status" => 0));

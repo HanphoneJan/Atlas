@@ -126,7 +126,7 @@ const submitForm = () => {
     ElMessage.error('请上传至少一张图片!');
     return;
   }
-  if (fileList.value.length > 0) {
+  if (fileList.value.length > 10) {
     ElMessage.error('一次性上传文件不能超过十张!');
     return;
   }

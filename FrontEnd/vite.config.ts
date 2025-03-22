@@ -58,7 +58,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        cacheId: 'atlas-cache-v1.2.2', // 每次构建时，手动修改版本号，强制用户更新
+        cacheId: 'atlas-cache-v1.3', // 每次构建时，手动修改版本号，强制用户更新
         cleanupOutdatedCaches: true, // 清除过期缓存
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024, // 将限制提高到 50MB
         //运行时缓存是在用户访问资源时执行的，会将请求的资源缓存到 Service Worker 中。
@@ -67,7 +67,7 @@ export default defineConfig({
             urlPattern: /\/api\/.*\.json$/,
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'api-cache-v1.2.2',
+              cacheName: 'api-cache-v1.3',
               expiration: {
                 maxEntries: 10,
                 maxAgeSeconds: 60 * 60 * 24,
@@ -78,7 +78,7 @@ export default defineConfig({
             urlPattern: /\.(?:png|jpg|jpeg|gif|svg)$/,// 匹配请求路径
             handler: 'CacheFirst',  // 网络优先，如果请求失败，使用缓存
             options: {
-              cacheName: 'api-cache-v1.2.2', // 缓存名称
+              cacheName: 'api-cache-v1.3', // 缓存名称
               expiration: {
                 maxEntries: 100,  // 最大缓存数量
                 maxAgeSeconds: 60 * 60 * 24 * 3, // 缓存7天
