@@ -15,14 +15,14 @@
 **前端体系**
 
 - 渐进式框架：Vue 3.2 + Composition API + Vite 4.0 构建现代化SPA
-- UI组件库：Element-Plus 2.3 + SCSS定制主题
+- UI组件库：Element-Plus 2.3
 - 增强特性：
   - PWA渐进式应用（Service Worker离线缓存/Web Manifest）
   - 动态资源加载（Vite异步模块拆包）
 
 **服务端架构**
 
-- 基础框架：PHP 8.1 + 自主开发MVC架构
+- 基础框架：PHP 8.1 + MVC架构
 - 接口规范：RESTful API + JWT鉴权
 - 数据处理：
   - MySQL 8.0 关系型存储
